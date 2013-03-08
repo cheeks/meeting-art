@@ -50,7 +50,7 @@ class Config {
 				
 		switch ($this->server_name) {
 
-			case "boiler.evb.com":
+			case "meeting-art.biz":
 				$this->environment = LOCAL;
 				$this->dbhost = 'localhost';
 				$this->dbuser = "root";

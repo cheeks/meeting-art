@@ -1,5 +1,5 @@
 /* import your sprites here */
-/* @import "buttons/*.png"; */
+ @import "buttons/*.png"; 
 
 /* Global */
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
@@ -19,20 +19,49 @@ body {
 
 }
 
-/* PageWrapper */
-#PageWrapper {
+/* Page Wrapper */
+#page-wrapper {
 
 }
 
 /* Global Header */
 #global-header {
-  h1 {
-    a {  }
-  }
+
 }
 
-/* Main Content */
-#MainContent {
+.carousel {
+	a {
+		margin: 0 15px;
+	}
+	#previous {
+		@include btn(previous);
+		display: inline-block;
+	}
+	#next {
+		@include btn(next);
+		display: inline-block;
+	}
+
+	.image-container {
+		position: relative;
+		width: 359px;
+		height: 356px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.frame {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 359px;
+		height: 356px;
+		z-index: 10;
+		background: image-url('frame.png');
+		@include box-shadow(0px 6px 10px -2px #888);
+	}
+	.image {
+		margin: 3px 0 0 7px;
+	}
 
 }
 

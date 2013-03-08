@@ -50,9 +50,15 @@
 	</script>
 </head>
 <body class="<?php if (isset($class)) echo $class; ?>">
-	<div id="PageWrapper">
+	<nav id="social">
+		like / tweet / +1
+	</nav>
+	
+	<div id="page-wrapper">
 		<header id="global-header">
-			<h1><a href="#">ma</a></h1>
+			<h1 class="title">#meetingart gallery</h1>
+			<p>Celebrating all the creativity that transpires in long meetings</p>
+			<p class="instructions">To submit:<br />Instagram your art made in meetings with the name and #meetingart</p>
 		</header>
 
-		<div id="MainContent" role="main">
+		<div id="main-content" role="main">
