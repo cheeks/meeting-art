@@ -5,7 +5,7 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-	<title><?= $settings->getPageTitle() ?></title>
+	<title>#meetingart</title>
 
 	<!-- BEGIN: meta tags -->
 		<meta charset="UTF-8">
@@ -31,6 +31,9 @@
 		<meta property="og:description" content=""/> 
 	<!-- END: OG FBook meta tags -->
 
+	<script type="text/javascript" src="//use.typekit.net/ppf5mrm.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<!-- BEGIN: <?= $settings->environment ?> styles -->
 		<link rel="stylesheet" type="text/css" href="<?= $settings->css_path ?>"/>
 		<script type="text/javascript">
@@ -51,14 +54,20 @@
 </head>
 <body class="<?php if (isset($class)) echo $class; ?>">
 	<nav id="social">
-		like / tweet / +1
+		<div class="fb-like">
+			<div class="fb-like" data-href="http://www.meeting-art.biz" data-send="false" data-width="60" data-show-faces="false"></div>
+		</div>
+		<div class="tweet">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+		</div>
+		<div class="plus">
+			<div class="g-plusone" data-size="tall" data-annotation="none"></div>
+		</div>
 	</nav>
 	
 	<div id="page-wrapper">
 		<header id="global-header">
 			<h1 class="title">#meetingart gallery</h1>
 			<p>Celebrating all the creativity that transpires in long meetings</p>
-			<p class="instructions">To submit:<br />Instagram your art made in meetings with the name and #meetingart</p>
+			<p class="instructions"><strong>To submit:</strong><br />Instagram your art made in meetings with the name and #meetingart</p>
 		</header>
-
-		<div id="main-content" role="main">

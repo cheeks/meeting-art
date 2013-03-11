@@ -5,5 +5,11 @@
   width: image-width($image_path); 
   height: image-height($image_path);
   cursor: pointer;
-  border: 0;
+}
+
+@mixin image-replace ($image) {
+	@extend .ir;
+	width: image-width($image); 
+	height: image-height($image);
+	background: image-url($image);
 }
