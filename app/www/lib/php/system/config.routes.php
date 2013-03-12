@@ -2,7 +2,8 @@
 
 Router::add('/', DIR_CTRL.'/index.php');
 Router::add('#^/regex/(test1|test2|test3)/$#', DIR_CTRL.'/regex.php', Router::ROUTE_PCRE);
-
+Router::add('/fetch_data', DIR_CTRL.'/fetch_data.php');
+Router::add('/get_photos', DIR_CTRL.'/get_photos.php');
 /**
  * Routes are added with the static method Router::add($pattern, $replacement)
  * It is processed as preg_replace($pattern, $replace) in the router class, so

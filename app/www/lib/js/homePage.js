@@ -22,7 +22,8 @@ ma.homePage = function () {
 				debug.log('[homePage.js] - initialized'); 
 
 				//--> sof private functions
-					ma.homePage.addStuff();
+
+					ma.homePage.getPhotos();
 					_setupBinds();
 
 				//--> eof private functions
@@ -31,13 +32,14 @@ ma.homePage = function () {
 
 		},
 
-		addStuff : function () {
+		getPhotos : function () {
 			debug.log('addStuff');
 			$.ajax({
 				dataType: 'json',
-				url: '/lib/json/dummy.json',
+				url: '/get_photos',
 				success: function (data) {
 					self.things = data;
+					update();
 				},
 				error: function (data) {
 					debug.log('error', data);
@@ -70,9 +72,14 @@ ma.homePage = function () {
 	}
 
 	function update () {
-		$('.handle').attr('href', 'http://www.instagram.com/'+self.things[cur].name).text('@' + self.things[cur].name);
-		$('.desc').text(self.things[cur].desc);
-		$('img').attr('src', self.things[cur].img).fadeIn(300);
+		$('.caption').fadeOut(300, function () {
+			$('.handle').attr('href', 'http://www.instagram.com/'+self.things[cur].photo_username).text('@' + self.things[cur].photo_username);
+			$('.desc').text(self.things[cur].description);
+			$(this).fadeIn(300);		
+		})
+		$('img').fadeOut(300, function() {
+			$(this).attr('src', self.things[cur].photo_url).fadeIn(300);
+		});
 	}
 
 }();
