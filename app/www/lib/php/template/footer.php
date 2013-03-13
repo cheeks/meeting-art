@@ -1,5 +1,5 @@
 		<footer id="global-footer">
-			<cite>Project by <a href="http://www.jeffmade.me" target="_blank">Jeff</a> and <a href="http://www.joshuakanner.com" target="_blank">Josh</a></cite>
+			<!-- <cite>Project by <a href="http://www.jeffmade.me" target="_blank">Jeff</a> and <a href="http://www.joshuakanner.com" target="_blank">Josh</a></cite> -->
 		</footer>
 	</div>
 	<!--[if lt IE 7 ]>
@@ -58,7 +58,7 @@
 	  var js, fjs = d.getElementsByTagName(s)[0];
 	  if (d.getElementById(id)) return;
 	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=387353134693630";
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=175947069220631";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
 

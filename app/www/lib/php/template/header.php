@@ -55,7 +55,7 @@
 <body class="<?php if (isset($class)) echo $class; ?>">
 	<nav id="social">
 		<div class="fb-like">
-			<div class="fb-like" data-href="http://www.meeting-art.biz" data-send="false" data-width="60" data-show-faces="false"></div>
+			<div class="fb-like" data-href="http://www.meetingartmuseum.com" data-send="false" data-width="60" data-show-faces="false"></div>
 		</div>
 		<div class="tweet">
 			<a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>

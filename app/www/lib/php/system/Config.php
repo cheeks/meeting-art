@@ -64,23 +64,23 @@ class Config {
 
 			break;
 			
-			case "production_url.com":
+			case "meetingartmuseum.com":
+			case "meetingartmuseum.joshuakanner.com":
 				//turn off error reporting for production
 				error_reporting(0);
 				ini_set('display_errors', '0');
 
-				$this->environment = PROD;
-				$this->dbhost = 'localhost';
-				$this->dbuser = "root";
-				$this->dbpass = "root";
-				$this->dbname = "DATABASE_NAME";
+				$this->environment = STAGE;
+				$this->dbhost = '69.89.31.189';
+				$this->dbuser = "joshuaka_admin";
+				$this->dbpass = "Severat3!";
+				$this->dbname = "joshuaka_meetingart";
 				$this->cdn_path = "";
 				$this->base_url = "/";
 				$this->use_min = FALSE;
 				$this->debug = FALSE;
-				$this->facebook_app_id = "";
+				$this->facebook_app_id = "175947069220631";
 			break;
-
 			default:
 				trigger_error('No environment domain has been setup. (e.g. local, development, stage) ', E_USER_ERROR);
 

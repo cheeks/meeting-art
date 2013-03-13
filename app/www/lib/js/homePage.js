@@ -36,7 +36,7 @@ ma.homePage = function () {
 			debug.log('addStuff');
 			$.ajax({
 				dataType: 'json',
-				url: '/get_photos',
+				url: 'get_photos',
 				success: function (data) {
 					self.things = data;
 					update();
