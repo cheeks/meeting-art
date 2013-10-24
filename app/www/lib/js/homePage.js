@@ -33,7 +33,6 @@ ma.homePage = function () {
 		},
 
 		getPhotos : function () {
-			debug.log('addStuff');
 			$.ajax({
 				dataType: 'json',
 				url: 'get_photos',
